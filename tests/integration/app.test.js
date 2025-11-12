@@ -23,7 +23,7 @@ describe("Student-Course API integration", () => {
     expect(res.body.name).toBe("David");
   });
 
-/*  test("POST /students should not allow duplicate email", async () => {
+  /*  test("POST /students should not allow duplicate email", async () => {
     const res = await request(app)
       .post("/students")
       .send({ name: "Eve", email: "alice@example.com" });
