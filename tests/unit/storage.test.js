@@ -53,7 +53,7 @@ test("should allow more than 3 students in a course", () => {
   const students = storage.list("students");
   const course = storage.list("courses")[0];
   storage.create("students", { name: "Extra", email: "extra@example.com" });
-  storage.create("students", { name: "Extra2", email: "extra2@example.com" });
+  storage.create("students", { name:  "Extra2", email: "extra2@example.com" });
   storage.enroll(students[0].id, course.id);
   storage.enroll(students[1].id, course.id);
   storage.enroll(students[2].id, course.id);
