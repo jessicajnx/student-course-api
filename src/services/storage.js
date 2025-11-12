@@ -62,7 +62,6 @@ function enroll(studentId, courseId) {
   );
   if (alreadyEnrolled) return { error: "Student already enrolled in this course" };
 
-  const enrolledCount = data.enrollments.filter((e) => e.courseId === Number(courseId)).length;
   data.enrollments.push({
     studentId: Number(studentId),
     courseId: Number(courseId),
